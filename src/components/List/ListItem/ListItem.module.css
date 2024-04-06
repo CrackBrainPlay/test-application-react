@@ -4,7 +4,7 @@
     font-style: normal;
     display: grid;
     /* border-radius: 10px; */
-    grid-template-columns: 2fr 8fr;
+    /* grid-template-columns: 2fr 8fr; */
     /* grid-template-rows: 60px; */
     /* grid-template-columns: minmax(110px, auto); */
     /* background-color: rgb(68, 0, 255); */
