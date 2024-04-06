@@ -1,0 +1,25 @@
+.container4 {
+    display: grid;
+    grid-column: 2/3;
+    /* background-color: rgb(32, 96, 216); */
+    grid-template-columns: 110px 1fr;
+    margin-top: 8px;
+    margin-bottom: 30px
+}
+
+.container5 {
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 2px;
+    align-items: center;
+}
+
+.container6 {
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 50px;
+}

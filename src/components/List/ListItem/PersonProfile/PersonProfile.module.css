@@ -5,6 +5,7 @@
     margin-top: 2px;
     grid-template-rows: 30px;
 
+
 }
 
 .img {
@@ -24,8 +25,10 @@
     margin-left: 10px;
     align-self: center;
     justify-items: start;
+    /* text-decoration: none; */
 
 }
+
 
 /* .item :hover {
      color: #AE0018; 

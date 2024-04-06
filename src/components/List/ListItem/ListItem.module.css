@@ -10,6 +10,7 @@
     /* background-color: rgb(68, 0, 255); */
 
 
+
 }
 
 .img {
@@ -26,6 +27,7 @@
     grid-column: 2/3;
     /* padding: 10px; */
     align-self: center;
+
     /* justify-items: start; */
 
 }
