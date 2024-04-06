@@ -1,0 +1,26 @@
+.content {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* display: grid; */
+    /* border-radius: 10px; */
+    /* grid-template-columns: 2fr 8fr; */
+    /* grid-template-rows: 60px; */
+    /* grid-template-columns: minmax(110px, auto); */
+    /* background-color: rgb(120, 226, 58); */
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 400px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(224, 224, 224);
+    /* padding-left: 10px; */
+}
+
+.content li {
+    list-style-type: none;
+
+}

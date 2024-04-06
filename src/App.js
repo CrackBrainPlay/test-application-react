@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import style from './App.css';
 
-function App() {
+import List from './components/List/List';
+import Profile from './components/Profile/Profile';
+// import { Routes, Route } from 'react-router-dom';
+
+// import { changeData, updateNewPostText } from './Redux/State.js';
+
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-wrapper'>
+      {/* <List profilePerson={props.profilePage} /> */}
+      <List state={props.state.profilePage} />
+      <div className={style.content}> <Profile />
+        {/* <Routes> */}
+        {/* <Route path="Profile/*"
+            element={<Profile
+            postsPage={props.state.profilePage}
+            changeDate={props.changeData}
+            updateNewPostText={props.updateNewPostText} />}/> */}
+        {/* <Route path="Profile/*"
+            element={<Profile />} />
+        </Routes> */}
+      </div>
     </div>
   );
 }
