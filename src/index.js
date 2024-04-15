@@ -4,26 +4,26 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
-// import state, { changeDate, saveData, subscribe } from './Redux/State.js';
-import state, { subscribe } from './Redux/State.js';
+import store from './Redux/reduxStore';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-export let rerenderEntireTree = (state) => {
-  root.render(
-    <React.StrictMode>
-      <BrowserRouter>
-        {/* <App state={state} changeDate={changeDate} saveData={saveData} /> */}
-        <App state={state} />
-        {/* <App state={state} /> */}
-      </BrowserRouter>
-    </React.StrictMode>
-  );
-};
+// export let rerenderEntireTree = (state) => {
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+// };
 
-rerenderEntireTree(state);
+// rerenderEntireTree(state);
 
-subscribe(rerenderEntireTree);
+// subscribe(rerenderEntireTree);
 
 
 
